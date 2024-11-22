@@ -8,7 +8,6 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #2c3e50;
@@ -22,6 +21,12 @@
             padding: 20px;
             border-radius: 10px;
             background-color: #34495e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            max-width: 800px;
         }
         header, footer {
             background-color: #2980b9;
@@ -50,6 +55,11 @@
             font-size: 1.2em;
             color: #3498db;
         }
+        .side-image {
+            width: 150px;
+            height: auto;
+            margin: 0 20px;
+        }
     </style>
 </head>
 <body>
@@ -57,11 +67,15 @@
         Will to Live Online - WTLO
     </header>
     <div class="container">
-        <h1>Will to Live Online</h1>
-        <p>WTLO is a survival FPS game.</p>
-        <p>Our website will be live soon!</p>
-        <p class="domain">wtlo-wiki.top</p>
-        <p>Stay tuned for comprehensive walkthroughs and more.</p>
+        <img src="placeholder-left.jpg" alt="Left Image" class="side-image">
+        <div class="content">
+            <h1>Will to Live Online</h1>
+            <p>WTLO is a survival FPS game.</p>
+            <p>Our website will be live soon!</p>
+            <p class="domain">wtlo-wiki.top</p>
+            <p>Stay tuned for comprehensive walkthroughs and more.</p>
+        </div>
+        <img src="placeholder-right.jpg" alt="Right Image" class="side-image">
     </div>
     <footer>
         © 2024 WTLO-Wiki. All rights reserved.
