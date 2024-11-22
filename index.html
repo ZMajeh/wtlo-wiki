@@ -6,7 +6,7 @@
     <title>Will to Live Online - Coming Soon</title>
     <style>
         body {
-            display: flex;
+            display: block;
             flex-direction: column;
             align-items: center;
             height: 100vh;
@@ -17,16 +17,24 @@
             margin: 0;
         }
         .container {
+            display: block;
             border: 3px solid #3498db;
-            padding: 20px;
+            padding: 1em;
             border-radius: 10px;
             background-color: #34495e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            position: absolute;
+            width: 92vw;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            margin: auto;
+            height: fit-content;
         }
         .content {
-            max-width: 800px;
+            width: 40vw;
+            height: auto;
+            display: inline-block;
         }
         header, footer {
             background-color: #2980b9;
@@ -44,21 +52,26 @@
             bottom: 0;
         }
         h1 {
-            font-size: 3em;
+            font-size: 5vw;
             margin-bottom: 0.5em;
         }
         p {
-            font-size: 1.5em;
+            font-size: 2vw;
             margin-bottom: 0.5em;
         }
         .domain {
-            font-size: 1.2em;
+            font-size: 1.7vw;
             color: #3498db;
         }
         .side-image {
-            width: 150px;
-            height: auto;
-            margin: 0 20px;
+            width: 25vw;
+            max-width: 100%;
+            height: -webkit-fill-available;
+            display: block;
+            top:0;
+            bottom:0;
+            position: absolute;
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -67,7 +80,8 @@
         Will to Live Online - WTLO
     </header>
     <div class="container">
-        <img src="placeholder-left.jpg" alt="Left Image" class="side-image">
+        <img src="placeholder-left.jpg" alt="Left Image" class="side-image" style="float: left; left: 10px">
+        <img src="placeholder-right.jpg" alt="Right Image" class="side-image" style="float: right; right: 10px">
         <div class="content">
             <h1>Will to Live Online</h1>
             <p>WTLO is a survival FPS game.</p>
@@ -75,7 +89,6 @@
             <p class="domain">wtlo-wiki.top</p>
             <p>Stay tuned for comprehensive walkthroughs and more.</p>
         </div>
-        <img src="placeholder-right.jpg" alt="Right Image" class="side-image">
     </div>
     <footer>
         © 2024 WTLO-Wiki. All rights reserved.
